@@ -8,7 +8,7 @@
 
 SQL : 데이터베이스에서 데이터를 가지고 올 때 사용하는 언어.  
 
-![alt text](week1_image/week1_테이블구조.png)
+![alt text](SQL_imagefile/week1_테이블구조.png)
 - Row -> 데이터 한 개, 가로로 한 줄  
 - Column -> 데이터의 특정 속성값, 세로  
 
@@ -44,7 +44,7 @@ OLAP : Online Analytical Processing. 분석을 위한 기능 제공
     - 창고에 있는 선반.
     - 행과 열로 이뤄진 테이블에 데이터 저장
 
-![alt text](week1_image/week1_BigQueryScreen.png)
+![alt text](SQL_imagefile/week1_BigQueryScreen.png)
 
 
 # 데이터 탐색 - 조건, 추출, 요약
@@ -60,10 +60,10 @@ OLAP : Online Analytical Processing. 분석을 위한 기능 제공
 # 저장된 데이터 확인하기
 - 쿼리 작성하기 전에 `데이터를 제대로 이해하기!`  
 ERD (Entity Relationship Diagram)
-![alt text](week1_image/week1_ERD.png)
+![alt text](SQL_imagefile/week1_ERD.png)
 - 내가 원하는 데이터가 어디에 어떻게 존재하는가를 이해하는 과정이 필요  
 - 칼럼들이 가지는 의미, 숫자들이 가진 의미, 영어들이 가진 의미들 정확히 파악하고 정리하는 과정이 필요함
-![alt text](week1_image/week1_dataExample.png)
+![alt text](SQL_imagefile/week1_dataExample.png)
 
 #### 포켓몬 데이터와 이커머스
 - 포켓몬 : 상품
