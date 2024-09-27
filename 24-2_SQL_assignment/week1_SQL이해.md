@@ -47,12 +47,20 @@ OLAP : Online Analytical Processing. 분석을 위한 기능 제공
 ![alt text](week1_BigQueryScreen.png)
 
 
-# 데이터 탐색
+# 데이터 탐색 - 조건, 추출, 요약
+### 데이터를 활용하는 과정
+- 어떤 일을 해야 한다  
+&rarr; 원하는 것을 정한다  
+&rarr; 데이터 탐색  
+&rarr; 단일자료?or다량의 자료?(->연결)  
+&rarr; `조건/추출/변환/요약`  
+&rarr; 데이터 결과 검증 -> 피드백/활용
 
 
-
-
-
+# 저장된 데이터 확인하기
+- 쿼리 작성하기 전에 `데이터를 제대로 이해하기!`  
+ERD (Entity Relationship Diagram)
+![alt text](week1_ERD.png)
 
 
 
