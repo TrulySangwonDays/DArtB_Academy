@@ -60,13 +60,74 @@ SELECT
 <br>
 
 # 2-5 데이터 탐색 : 요약 (집계, 그룹화)
-- COUNT, DISTINCT, GROUP BY
+- COUNT, DISTINCT, GROUP BY  
+<br>
+
+### GROUP BY : 같은 값끼리 모아서 그룹화한다.
+- 특정 칼럼을 기준으로 모으면서 다른 칼럼에선 집계 가능(mean, avg, max, min 등)
+
+#### SQL로 표현해보기
+```sql
+SELECT
+    집계할_칼럼1,
+    집계함수(COUNT, MAX, MIN 등)
+FROM Table
+GROUP BY
+    집계할_칼럼1
+```
+
+- 집계할 칼럼을 SELECT에 명시하고,
+- 그 칼럼을 꼭 GROUP BY에 작성
+
+
+### DISTINCT : 고유값을 알고 싶은 경우
+- 여러 값 중에 Unique한 것만 보고싶은 경우 사용
+![alt text](SQL_imagefile/week2_DISTINCT관련.png)
+
+<br>
+
+# GROUP BY 연습문제
+#### 1. pokemon 테이블에 있는 포켓몬 수를 구하는 쿼리
+![alt text](SQL_imagefile/week2_GROUPBY연습문제1.png)
+
+#### 2. 포켓몬의 수가 세대별로 얼마나 있는지 알 수 있는 쿼리
+![alt text](SQL_imagefile/week2_GROUPBY연습문제2.png)
+
+#### 3. 포켓몬의 수를 타입별로 집계하고, 포켓몬의 수가 10 이상인 타입만 남기는 쿼리 작성. 포켓몬의 수가 많은 순으로 정렬
+![alt text](SQL_imagefile/week2_GROUPBY연습문제3.png)
 
 
 
 
 
 
+<br>
+
+- 그룹화(집계) 활용 포인트
+    - 일자별 집계 -> 원본데이터는 특정시간에 어떤 유저가 한 행동이 기록
+    - 연령대별 집계 -> 특정 연령대에서 더 많이 구매했는가?
+    - 특정 타입별 집계 -> 특정 제품 타입을 많이 구매했는가?
+    - 앱 화면별 집계 -> 어떤 화면에 유저가 많이 접근했는가?
+
+### 조건을 설정하고 싶은 경우
+1. WHERE : Table에 바로 조건을 설정하고 싶은 경우
+2. HAVING : GROUP BY한 후 조건을 설정하고 싶은 경우
 
 
+
+
+# ORDER BY : 정렬하기
+- 쿼리의 맨 마지막(아럐)에 두고,
+- 쿼리의 맨 마지막에만 작성하면 됨(중간에 필요없음)
+- 오름차순이 디폴트값
+
+# LIMIT : 출력 개수 제한
+- 쿼리문의 결과 row수를 제한하고 싶은 경우 사용
+
+```sql
+SELECT
+    col
+FROM Table
+ LIMIT 10
+```
 
