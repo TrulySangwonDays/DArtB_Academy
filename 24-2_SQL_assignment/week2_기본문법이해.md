@@ -1,0 +1,72 @@
+# 2-3 데이터 탐색 - 조건과 추출
+- 데이터셋 &rarr; 포켓몬 데이터셋  
+
+### SQL 쿼리문 기본 구조
+```sql
+SELECT
+    Col1 as new_name, /*어떤 칼럼을 추출할 것인가?*/
+    Col2,
+    Col3
+  FROM Dataset.Table /*어떤 테이블에서 데이터를 확인?*/
+ WHERE /*원하는 조건이 있다면 어떤 조건?*/
+    Col1 = 1
+```
+
+`*` : "모든 칼럼을 추출하겠다"는 의미  
+`* EXCEPT(제외할 칼럼)` &rarr; 이런 형태로도 가능
+
+### 집합처럼 생각해보기
+![alt text](SQL_imagefile/week2_집합처럼생각하기.png)
+
+### 기본 쿼리문법 실습
+![alt text](SQL_imagefile/week2_기본문법실습.png)
+
+### SQL 문법 핵심정리
+- FROM
+    - 데이터를 확인할 시 Table 명시
+    - 이름이 너무 길거나 필요 시, as로 "별칭" 지정 가능
+    - FROM Table1 as T1
+- WHERE
+    - FROM에 명시된 Table에 저장된 데이터를 필터링(조건 설정)
+    - Table에 있는 칼럼을 조건 설정
+- SELECT
+    - Table에 저장되어 있는 칼럼 선택
+    - 여러 칼럼 선택 가능
+    - col1 as "별칭"으로 칼럼의 이름도 별칭 지정 가능
+
+### 실행순서 : SELECT &rarr; FROM &rarr; WHERE  
+<br>
+<br>
+
+
+
+# 2-4 연습문제
+#### 1. trainer 테이블에 있는 모든 데이터를 보여주는 쿼리
+![alt text](SQL_imagefile/week2_연습문제1.png)
+
+#### 2. trainer 테이블에 있는 트레이너의 name을 출력하는 쿼리
+![alt text](SQL_imagefile/week2_연습문제2.png)
+
+#### 3. trainer 테이블에 있는 트레이너의 name, age를 출력하는 쿼리
+![alt text](SQL_imagefile/week2_연습문제3.png)
+
+#### 4. trainer 테이블에서 id가 3인 트레이너의 name, age, hometown을 출력하는 쿼리
+![alt text](SQL_imagefile/week2_연습문제4.png)
+
+#### 5. pokemon 테이블에서 "피카츄"의 공격력과 체력을 알 수 있는 쿼리
+![alt text](SQL_imagefile/week2_연습문제5.png)
+
+<br>
+<br>
+
+# 2-5 데이터 탐색 : 요약 (집계, 그룹화)
+- COUNT, DISTINCT, GROUP BY
+
+
+
+
+
+
+
+
+
