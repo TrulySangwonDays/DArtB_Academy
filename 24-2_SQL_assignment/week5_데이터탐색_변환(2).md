@@ -135,6 +135,76 @@ FROM (
 
 
 
+<br><br><br>
+
+
+# 4-6 조건문 함수 CASE WHEN, IF
+- 특정 조건이 충족되면, 어떤 행동을 하자
+- 조건에 따라 다른 값을 표시하고 싶을 때 사용
+
+### 조건문 사용하는 이유
+- 특정 카테고리를 하나로 합치는 전처리가 필요할 수 있음
+- 데이터를 처리하는 방식이 다른데, 특정 카테고리를 합쳐서 보고싶거나, 쪼개서 보고싶을 때 조건문을 상요함
+
+### CASE WHEN
+```sql
+SELECT
+  CASE
+    WHEN 조건1 THEN 조건1이 참일 경우 결과
+    WHEN 조건2 THEN 조건2가 참일 경우 결과
+    ELSE 그 외 조건일 경우 결과
+END AS 새로운_칼럼_이름
+FROM 
+```
+
+### CASE WHEN `순서`
+- 첫번째 조건에 걸리면 바로 다음으로 넘어김.
+- 따라서, CASE WHEN의 순서에 따라 결과값이 달라짐
+
+
+<br>
+
+### IF
+- 사용법은 엑셀과 유사함.
+
+<br>
+
+---
+## IF는 단일조건일 경우 유용, CASE WHEN은 여러조건일 경우 유용
+
+
+
+
+
+
+<br><br><br>
+
+
+# 4-7 조건 문 함수 연습문제
+
+
+### 1. 포켓몬의 'Speed'가 70 이상이면 '빠름', 그렇지 않으면 '느림'으로 표시하는 새로운 칼럼 'Speed_Category' 만들기
+![alt text](SQL_imagefile/week5_조건문연습문제1.png)
+
+
+### 2. 포켓몬의 'type1'에 따라 'Water', 'Fire', 'Electric' 타입은 각각 '물', '불', '전기'로, 그 외 타입은 '기타'로 분류하는 새 칼럼 'type_Korean' 만들기
+![alt text](SQL_imagefile/week5_조건문연습문제2.png)
+
+
+### 3. 각 포켓몬의 총점(total)을 기준으로, 300 이하면 'Low', 301에서 500 사이면 'Medium', 501 이상이면 'High'로 분류하기
+![alt text](SQL_imagefile/week5_조건문연습문제3.png)
+
+
+### 4. 각 트레이너의 배지 개수(badge_count)를 기준으로, 5개 이하면 'Beginner', 6개에서 8개 사이면 'Intermediate', 그 이상이면' Advanced'로 분류하기
+![alt text](SQL_imagefile/week5_조건문연습문제4.png)
+
+
+### 5. 트레이너가 포켓몬을 포획한 날짜(catch_date)가 '2023-01-01' 이후이면 'Recent', 그렇지 않으면 'Old'로 분류하기
+![alt text](SQL_imagefile/week5_조건문연습문제5.png)
+
+
+### 6. 배틀에서 승자(winner_id)가 player1_id와 같으면 'Plauer 1 Wins', player2_id와 같으면 'Plauer 2 Wins', 그렇지 않으면 'Draw'로 결과가 나오게 하기
+![alt text](SQL_imagefile/week5_조건문연습문제6.png)
 
 
 
@@ -143,6 +213,30 @@ FROM (
 
 
 
+<br><br><br>
+
+
+# 4-8 정리
+칼럼 변환하기 정리  
+    - 데이터 타입 : 숫자, 문자, 시간/날짜, 부울Bool
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+# 4-9 BigQuery 공식문서 확인하는 법
+- 개발 공식문서
+    - 해당 기술을 어떻게 사용하면 좋을지에 대한 문서를 제공함
+    - 익숙해지면 빠르게 파악할 수 있음
+- 찾는 법
+    - "기술명 + documentation"으로 검색
+    - 예) 구글에  `BigQuery documentation`로 검색
 
 
 
