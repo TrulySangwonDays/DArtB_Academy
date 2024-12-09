@@ -41,7 +41,7 @@ SQL은 국제표준화된 언어임.
 
 
 ---
-![alt text](asset/ch1_quiz.png)
+![alt text](asset/1강_퀴즈인증.png)
 
 
 
