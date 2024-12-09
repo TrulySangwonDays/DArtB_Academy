@@ -27,4 +27,4 @@
 <br>
 
 
-![alt text](다트비노션.png)
+![alt text](DArt_B_Notion_screenshot.png)
