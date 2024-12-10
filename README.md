@@ -26,5 +26,11 @@
 
 <br>
 
+### 수료증
+![alt text](asset/수료증_DArt_B_이상원.png)
 
-![alt text](DArt_B_Notion_screenshot.png)
+
+### 활동 데이터베이스 notion 페이지 일부
+![alt text](asset/DArt_B_Notion_screenshot.png)
+
+
