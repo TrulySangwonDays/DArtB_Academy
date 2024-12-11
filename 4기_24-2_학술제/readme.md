@@ -36,9 +36,10 @@
 
 ### 결과물
 - 태블로 대시보드  
-<img src="asset/대시보드.png" alt=" " width="180" height="높이">
-https://public.tableau.com/views/____17339214527720/sheet9?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+    <img src="asset/대시보드.png" alt=" " width="180" height="높이">
+    https://public.tableau.com/views/____17339214527720/sheet9?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link  
 
+<br>
 <br>
 
 - 발표 자료
